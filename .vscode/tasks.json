@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-g",
+        "undo_redo.cpp",
+        "-o",
+        "undo_redo"
+      ],
+      "windows": {
+        "args": [
+          "-std=c++17",
+          "-Wall",
+          "-Wextra",
+          "-g",
+          "undo_redo.cpp",
+          "-o",
+          "undo_redo.exe"
+        ]
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
